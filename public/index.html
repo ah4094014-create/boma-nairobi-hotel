@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Boma Nairobi - Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-content">
+        <h1>🏨 The Boma Nairobi</h1>
+        <p class="subtitle">Weather Dashboard</p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- Current Weather Section -->
+      <section class="weather-section current-weather">
+        <h2>Current Weather in Nairobi</h2>
+        <div id="currentWeather" class="weather-card">
+          <div class="loading">Loading weather data...</div>
+        </div>
+      </section>
+
+      <!-- Forecast Section -->
+      <section class="weather-section forecast-section">
+        <h2>5-Day Forecast</h2>
+        <div id="forecastContainer" class="forecast-grid">
+          <div class="loading">Loading forecast data...</div>
+        </div>
+      </section>
+
+      <!-- Last Updated -->
+      <div class="footer">
+        <p>Last updated: <span id="lastUpdated">--:--</span></p>
+        <p>Data from OpenWeatherMap API</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
